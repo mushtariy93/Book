@@ -1,0 +1,29 @@
+
+db.book.insertOne({
+    title: "Yevgeniy Onegin",
+    author: "Aleksandr Pushkin",
+    pages: 300,
+    price: 45.000,
+    publish_date: 19-8-2024,
+    type_id: 2,
+    publisher_id: 3
+})
+
+db.type.insertMany([
+    {name: "Roman"},
+    {name: "She'riy roman"},
+    {name: "Qissa"},
+    {name: "Hikoya"}
+])
+
+db.publisher.insertMany([
+    {name: "Yangi asr avlodi"},
+    {name: "Ma'rifat"},
+    {name: "Hilol"}
+])
+
+db.book.find()
+db.type.find()
+db.publisher.find()
+
+db.book.drop()
